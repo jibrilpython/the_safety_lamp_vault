@@ -1,0 +1,42 @@
+1. DESIGN PHILOSOPHY
+Visual: "Pit Bottom Clarity" — the UI draws from the most atmospheric context in the entire series: the underground mine. But rather than leaning into darkness for its own sake, the design philosophy is about the function of the safety lamp itself — bringing a precise, controlled point of light into absolute darkness. The UI is that lamp: a warm, focused, highly legible interface that feels purposeful in the dark. Think the design sensibility of a premium headlamp manufacturer's companion app, or a mine rescue organization's digital archive — dark-first, warm-accented, safety-coded.
+Mood: warm in the dark, protective, heritage-heavy, coalfield-serious, vault-like.
+Important: No coal textures, no flame animations, no underground cave illustrations. The safety lamp was a precision instrument — its gauze geometry, its wick calibration, its fuel capacity were all engineered to exact tolerances. The app catalogs that precision. The warmth is in the light the lamp cast, not in decorative surfaces.
+
+2. COLORS
+#0E0C09 — Main background (pit black — the second darkest background in the series after the Pyrometer Forge, but warmer. Brown-black like colliery timber, not cold furnace black)
+#F2EDE4 — Primary text & high-contrast elements (lamp glow white — warm cream, the color of the light a Davy lamp actually cast)
+#181410 — Secondary panels / card surfaces
+#6B6258 — Secondary text / muted labels (coalfield grey, warm and dark)
+#D4920A — Primary accent (carbide gold — the specific yellow-gold of a carbide flame, the brass housing of a Wolf lamp, the polished reflector of a cap lamp. Warm, luminous, controlled)
+#1E1A14 — Outline / stroke / dividers (dark pit rule lines, warm brown-black)
+#C0392B — Secondary accent (danger red — in this app, danger red has a uniquely literal meaning: the red flame that indicated methane presence when a Davy lamp was held near firedamp. Used for condition warnings, gas-detection notes, and colliery disaster provenance. More present in this app than in others.)
+#8B2000 — Critical errors only (deep firedamp red — darker and more ominous than standard error red)
+Important: Carbide gold is luminous by design — it should feel like a point of light in the dark interface, the way a safety lamp functioned in a pit. Red carries genuine historical weight in this app — it is not just an error color, it is the color of danger detected and danger present. Treat it with the gravity of its meaning. This is the second dark-background app in the series, but warmer than the Pyrometer Forge — brown-black, not blue-black.
+
+3. TYPOGRAPHY
+Display / Headings: Playfair Display (weight 700) — returns here after the Steam Gauge Vault, because coalfield heritage and Victorian mining culture share the same institutional typography. Colliery company letterheads, pit sinker's reports, and mining safety commission documents all used heavy serif type. At large sizes it carries the weight of that history. Used for lamp names, colliery names on detail views, and the app title.
+Body / Descriptions: IBM Plex Sans (weight 300–400, warm cream #F2EDE4) — engineered and readable on dark. For condition notes, colliery history, fuel specifications, and all prose fields.
+Monospace / Identifiers: IBM Plex Mono — for archive codes like SLV-WOLF-BRASS-1923-GBR-DURHAM-COALFIELD-061, fuel capacities (180 ml petroleum), gauze mesh specs (28 mesh/inch), and all structured technical fields.
+Important: Playfair Display on dark background at large sizes only — below 24px it loses its elegance and becomes heavy. IBM Plex Sans at 300 weight keeps the reading text from feeling oppressive against the near-black surface. IBM Plex Mono for every code, measurement, and specification — these should feel like entries in a colliery safety register.
+
+4. SURFACE & TEXTURE LANGUAGE
+
+Backgrounds: flat pit black — no grain, no noise, no vignette glow
+Cards: #181410 surface with a 1px border at #1E1A14 and 10px corner radius — dark lamp cases in a dark vault
+Flame gauze motif: each list card features a small SVG — a minimal front-facing representation of a safety lamp's wire gauze cylinder: a tall thin rectangle with a fine crosshatch grid pattern inside, topped by a small flame-shaped triangle in carbide gold. The gauze grid density reflects the lamp type (Davy = fine mesh, Clanny = glass-sided with fewer grid lines, carbide cap = open reflector with no gauze). Gold flame for operational lamps, red-tinged flame for lamps with historical gas-detection provenance or condition issues. This is the most historically resonant motif in the series — the gauze is the invention that saved thousands of lives.
+Fuel type badge: each card shows the fuel specification in IBM Plex Mono — Petroleum wick, Calcium carbide, Benzoline, Colza oil — in a small dark-bordered pill in carbide gold text
+Photography: lamp photography on near-black — the gauze cylinder, reflector, and fuel reservoir forward. Warm light sources permitted in photography — a lit lamp in a dark background is the single most powerful image in this collection.
+Colliery provenance tag: small pill showing the originating pit or district — Durham Coalfield, South Wales, Ruhr Basin, Appalachian, Silesian — in carbide gold at 15% opacity fill with full gold text
+
+
+5. INTERACTION PRINCIPLES
+
+Transitions: 200–240ms ease-out — deliberate and warm, like a flame steadying after a door opens
+Selected state: carbide gold left-border (3px) + very faint #1A1508 background tint on active cards
+Empty states: NO LAMPS IN THIS VAULT. in IBM Plex Mono, centered, coalfield grey — one line
+Loading: a thin carbide gold progress bar at screen top — slow and warm, like a flame finding its level
+Navigation: bottom tab bar on dark warm surface — four tabs: Vault, Coalfield Map, Logbook, Settings. Active tab in carbide gold. Tab bar background #181410, border top #1E1A14.
+Gas detection classification: a first-class filter — Firedamp detection, Blackdamp indicator, General illumination, Inspection lamp, Rescue service — because a safety lamp's gas-detection capability was its primary engineering purpose and the first thing a mining historian asks about any specimen
+
+Important: The flame-and-gauze SVG on each card is the most historically charged motif in the series — the wire gauze cylinder is the invention that made deep coal mining survivable. Its presence on every card is not decorative: it is a reminder of what these instruments were for. Gold flame means the lamp is complete and operational. A red-tinted flame means the record carries disaster provenance or significant condition damage. That color shift should feel like a warning, because historically, it was one.
